@@ -1,10 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<h1>
-This is practice paper
-</h1>
-<p>
-links : 
-<a href="https://www.w3schools.com/Html/tryit.asp?filename=tryhtml_default">Testing link</a>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Typing Bar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url('https://plus.unsplash.com/premium_photo-1661432801901-d4f6c1ee2ece?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgxfHxob21lJTIwY29va2VkJTIwbWVhbHxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      display: flex;
+      gap: 10px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      width: 200px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ff5722;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e64a19;
+    }
+  </style>
 </head>
+<body>
+
+  <div class="container">
+    <input type="text" placeholder="Type something...">
+    <button>OK</button>
+  </div>	
+
+</body>
 </html>
